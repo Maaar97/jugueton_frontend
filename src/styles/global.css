@@ -1,0 +1,21 @@
+:root {
+    --brand-blue: #3A54CD;
+    --brand-light-blue: #58B3DC;
+    --brand-green: #4EA564;
+    --brand-light-green: #A2D34D;
+    --brand-yellow: #F6CA54;
+    --light-grey: #EEE;
+    --brand-orange: #ED893E;
+}
+
+/* @font-face {
+    font-family: 'AvenirNextRounded';
+    src: url('../assets/fonts/AvenirNextRounded-Regular.ttf');
+    font-weight: 400;
+}  */
+
+a {
+    color: black;
+    font-weight: bold;
+}
+

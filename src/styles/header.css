@@ -1,0 +1,152 @@
+header.header {
+    height: 10.5em;
+}
+
+.covid-banner {
+    background-color: var(--brand-blue);
+    padding: 1em 3em;
+    color: white;
+    font-size: small;
+    text-align: center;
+}
+
+.covid-banner a {
+    font-weight: 400;
+    color: var(--brand-light-green);
+}
+
+.header-links {
+    display: none;
+}
+
+.header .nav-bar {
+    padding: 5px 0;
+}
+
+.brand-logo {
+    position: absolute;
+    left: 15px;
+    height: 45px;
+}
+
+.nav-bar-right {
+    position: absolute;
+    right: 15px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-right ul {
+    margin: 0;
+}
+
+.nav-bar-menu {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    color: var(--brand-green);
+}
+
+.nav-bar-menu-item {
+    display: flex;
+}
+
+.nav-bar-menu-item i{
+    font-size: 25px;
+}
+
+.nav-bar-account {
+    font-size: 15px;
+}
+
+.nav-bar-search {
+    width: 100%;
+    position: absolute;
+    padding: 0 15px;
+    top: 8em;
+}
+
+.search-bar {
+    display: flex;
+    max-width: calc(100vw - 30px);
+    width: 100%;
+    border: 1px solid var(--brand-yellow);
+    border-radius: 5px;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.search-bar input {
+    border: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.search-bar button {
+    border: 0;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--brand-green);
+    color: white;
+}
+
+@media (min-width: 768px) {
+    header.header {
+        height: auto;
+    }
+
+    .covid-banner {
+        padding: .5em 3em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-links {
+        display: flex;
+    }
+
+    .header-link-img{
+        margin: 0 10px;
+        height: 20px;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5em 3em !important;
+    }
+
+    .brand-logo {
+        position: inherit;
+        left: 0;
+    }
+
+    .nav-bar-search {
+        width: 50%;
+        position: inherit;
+        padding: 0;
+        top: 0;
+    }
+
+    .search-bar {
+        border-radius: 20px;
+    }
+
+    .search-bar button {
+        border-radius: 20px;
+        background-color: transparent;
+        color: var(--brand-light-green);
+    }
+
+    .nav-bar-right {
+        position: inherit;
+    }
+
+    .nav-bar-menu-item {
+        margin: 0 10px;
+    }
+}
