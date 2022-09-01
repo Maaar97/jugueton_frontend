@@ -1,14 +1,18 @@
 
 # Jugueton Frontend
 
-Frontend made with ReactJS to view data from Jugueton Backend
 
-Most data is static, or made with placeholders
+Landing Page for Jugueton, made with ReactJS
+
+Data is fetched from the *Jugueton Backend API*
+
+
 ## Start server
 
 To run this project run
 
 ```bash
+  npm install
   npm start
 ```
 
