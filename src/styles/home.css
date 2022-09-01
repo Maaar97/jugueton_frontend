@@ -1,0 +1,408 @@
+.content {
+    position: relative;
+    margin-top: auto;
+}
+
+.banner {
+    cursor: pointer;
+    height: 100%;
+}
+
+.banner a {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner button {
+    border: none;
+    background-color: var(--brand-yellow);
+    border-radius: 20px;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px 20px;
+    position: absolute;
+}
+
+.banner button:hover {
+    background-color: white;
+    color: var(--brand-yellow);
+}
+
+.banner-overlay {
+    position: absolute;
+    margin: 1em;
+    left: 15px;
+    color: white;
+}
+
+.banner-overlay p {
+    margin: 0;
+    font-size: x-large;
+}
+
+.banner-overlay span {
+    font-weight: 400;
+    font-size: small;
+    text-decoration: underline;
+}
+
+.highlights-grid {
+    margin: 30px 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1em;
+    row-gap: 1.5em;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.highlights-item {
+    text-align: center;
+}
+
+.highlight-item-image {
+    object-fit: contain;
+}
+
+.highlight-item-content {
+    padding: 0 5px;
+    align-items: end;
+}
+
+.highlight-item-content p{
+    margin: .3em 0;
+}
+
+.highlight-item-content h3{
+    margin: .3em 0;
+}
+
+.highlight-item-content a{
+    align-self: flex-end;
+}
+
+.carousel-inner{
+    padding: 1em;
+}
+
+.carousel-item {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.card{
+    padding: 1em;
+    margin: 0 .5em;
+    border: none;
+    height: 100%;
+    text-align: center;
+}
+
+.product-img {
+    margin: 0 auto;
+}
+
+.product-brand {
+    color: #bbb;
+    margin: 0;
+}
+
+.product-name {
+    font-size: small;
+}
+
+.product-price {
+    font-size: large;
+    font-weight: 500;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    background-color: var(--brand-light-green);
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carrousel {
+    margin: 1em 0;
+    padding: 15px 5px;
+    text-align: center;
+    background-color: var(--light-grey);
+    background-position: center;
+    background-size: cover;
+}
+
+.carrousel-banner {
+    color: white;
+}
+
+.carrousel-banner * {
+    margin: 0;
+}
+
+.carrousel-items {
+    display: flex;
+    margin: 1em 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item {
+    width: 100%;
+    background-color: white;
+    border: 2px solid var(--light-grey);
+    border-radius: 5px;
+}
+
+.carrousel-item-img {
+    background-color: var(--light-grey);
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-item button {
+    margin: 15px 0;
+    width: 60%;
+    padding: 10px 0;
+    color: black;
+    font-weight: bold;
+    background-color: var(--brand-light-green);
+    border: none;
+    border-radius: 20px;
+}
+
+.section {
+    padding: 0 15px;
+}
+
+.section-label {
+    text-align: center;
+}
+
+.section-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1em;
+    row-gap: 1.5em;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.section-item {
+    text-align: center;
+    text-decoration: none;
+}
+
+.section-item a {
+    text-decoration: none;
+}
+
+.section-item a:hover {
+    color: var(--brand-blue);
+}
+
+.section-item-img {
+    background-color: var(--light-grey);
+    object-fit: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2.7em;
+    line-height: .75em;
+}
+
+.section-item-content {
+    margin: 5px 0;
+}
+
+.section-item-content img {
+    max-height: 3em;
+    object-fit: cover;
+}
+
+.section-item-content p {
+    margin-top: 0;
+}
+
+.section-item-category {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.section-item-description {
+    font-weight: 400;
+}
+
+.departments-section {
+    margin: 15px;
+    text-align: center;
+}
+
+.department-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+.department-item-img {
+    border-radius: 50%;
+    background-color: var(--light-grey);
+}
+
+.department-banners {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5em;
+    column-gap: 1em;
+}
+
+.compra-online {
+    margin: 15px;
+    background-color: var(--brand-light-blue);
+    text-align: center;
+}
+
+.compra-online img {
+    width: 50%;
+}
+
+.compra-online a {
+    display: block;
+    padding: 1.5em;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+.compra-online p {
+    margin: 1em 0;
+    line-height: 1em;
+}
+
+.compra-online button {
+    border: none;
+    background-color: var(--brand-light-green);
+    border-radius: 20px;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.compra-online button:hover {
+    background-color: white;
+    color: var(--brand-light-green);
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin: 0 5em;
+    }
+
+    .banner a {
+        justify-content: start;
+        align-items: flex-start;
+    }
+    
+    .banner button {
+        transform: translate(50%, 125%);
+        font-size: 1em;
+        padding: 5px 20px;
+    }
+
+    .banner-overlay {
+        left: initial;
+        margin: .5em;
+    }
+
+    .banner-overlay p {
+        font-size: large;
+    }
+
+    .highlights-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .highlight-item-content h3{
+        font-size: larger;
+    }
+
+    .department-list {
+        margin: 3em 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .department-banners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carousel-inner {
+        display: flex;
+    }
+
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 25%;
+        display: block;
+        padding: 1em;
+    }
+    
+    .carousel-control-prev {
+        transform: translate(-150%, -50%);
+    }
+
+    .carousel-control-next{
+        transform: translate(150%, -50%);
+    }
+}
+
+@media (min-width: 1080px) {
+    .content {
+        margin: 0 7.5em;
+    }
+
+    .banner button {
+        transform: translate(80%, 180%);
+        font-size: larger;
+        padding: 10px 20px;
+    }
+
+    .banner-overlay {
+        margin: 1em;
+    }
+
+    .banner-overlay p {
+        font-size: x-large;
+    }
+
+    .department-list {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .compra-online a {
+        display: flex;
+        padding: 2.5em 1.5em;
+        justify-content: space-around;
+    }
+
+    .compra-online img {
+        object-fit: contain;
+        width: 40%;
+    }
+
+    .compra-online p {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,81 @@
+.footer {
+    background-color: var(--brand-orange);
+    padding: 10px 15px 20px 15px;
+    text-align: center;
+    color: white;
+}
+
+.slogan {
+    font-size: 2em;
+}
+
+.b-corp img {
+    filter: invert(1);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    row-gap: 1.5em;
+    column-gap: 1.5em;
+    align-items: center;
+}
+
+.footer-about-us ul, .corp-links ul, .footer-contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.b-corp img {
+    height: 80px;
+}
+
+.contact-link {
+    padding: 5px 0;
+}
+
+.corp-links {
+    text-align: center;
+}
+
+.corp-links img {
+    height: 20px;
+    filter: brightness(255);
+}
+
+.social-media-links {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-about-us a, .contact-link a, .social-media-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.contact-link i, .social-media-links i {
+    font-size: larger;
+}
+
+@media (min-width: 1080px) {
+    .footer {
+        padding: 3em 10em;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+        font-size: larger;
+    }
+
+    .b-corp img{
+        height: 150px;
+    }
+
+    .corp-links img{
+        height: 1.5em;
+    }
+}
