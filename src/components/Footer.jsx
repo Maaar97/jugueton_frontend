@@ -3,10 +3,10 @@ const Footer = (props) => {
     <footer className="footer">
       <p className="slogan">¡Vamos a jugar!</p>
       <div className="footer-grid">
-        <div className="b-corp">
+        <div className="footer-grid-item b-corp">
           <img src={ props.logos.empresaB } alt="" />
         </div>
-        <div className="footer-about-us">
+        <div className="footer-grid-item footer-about-us">
           <strong>SOBRE NOSOTROS</strong>
           <ul>
             <li>
@@ -20,14 +20,14 @@ const Footer = (props) => {
             </li>
           </ul>
         </div>
-        <div className="corp-links">
+        <div className="footer-grid-item corp-links">
           <strong>HERMANITOS</strong>
           <ul>
             <li><img src={ props.logos.bebeJugueton} alt="" /></li>
             <li><img src={ props.logos.cemaco} alt="" /></li>
           </ul>
         </div>
-        <div className="footer-contact">
+        <div className="footer-grid-item footer-contact">
           <strong>CONTÁCTANOS</strong>
           <ul>
             <li className="contact-link">
@@ -41,10 +41,10 @@ const Footer = (props) => {
               </a>
             </li>
             <li className="social-media-links">
-              <a href="https://www.facebook.com/cemacogt/" target="_blank" rel="noopener noreferrer">
+              <a className="social-media-link" href="https://www.facebook.com/cemacogt/" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-facebook"></i>
               </a>
-              <a href="https://www.pinterest.com/cemacoguatemala/" target="_blank" rel="noopener noreferrer">
+              <a className="social-media-link" href="https://www.pinterest.com/cemacoguatemala/" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-pinterest"></i>
               </a>
             </li>
@@ -52,7 +52,7 @@ const Footer = (props) => {
         </div>
       </div>
       <div className="copyright">
-      <span>&#169;</span> COPYRIGHT 2022 JUGUETÓN GUATEMALA - TODOS LOS DERECHOS RESERVADOS
+        <span>&#169;</span> COPYRIGHT 2022 JUGUETÓN GUATEMALA - TODOS LOS DERECHOS RESERVADOS
       </div>
     </footer>
   );

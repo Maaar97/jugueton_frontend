@@ -21,6 +21,10 @@
     align-items: center;
 }
 
+.footer-grid-item:nth-child(odd) {
+    border-right: 2px solid white;
+}
+
 .footer-about-us ul, .corp-links ul, .footer-contact ul {
     list-style: none;
     padding: 0;
@@ -69,6 +73,19 @@
     .footer-grid {
         grid-template-columns: repeat(4, 1fr);
         font-size: larger;
+        margin-bottom: 1em;
+    }
+
+    .footer-grid-item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-grid-item:nth-child(-n+3) {
+        border-right: 2px solid white;
     }
 
     .b-corp img{
@@ -77,5 +94,17 @@
 
     .corp-links img{
         height: 1.5em;
+    }
+
+    .contact-link {
+        text-align: left;
+    }
+
+    .social-media-links {
+        justify-content: left;
+    }
+
+    .social-media-link {
+        padding: 5px;
     }
 }
