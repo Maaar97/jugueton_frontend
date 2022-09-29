@@ -48,39 +48,39 @@ const Carrousel = (props) => {
 
   return (
     <div className="carrousel" style={{ backgroundImage: `url(${props.backgroundImage})`}}>
-      <div className="carrousel-banner">
-        <h2>{ props.title }</h2>
-        <h3>{ props.subtitle }</h3>
-      </div>
-      { carouselItems && (
-        <div id={props.id} className="carousel slide" data-bs-ride="carousel">
-          <div className="carousel-inner">
-            {
-              carouselItems.map((item, index) => {
-                return <div key={"carousel-item-" + (index+1)} className={index === 0 ? "carousel-item active" : "carousel-item"}>
-                  <div className="card">
-                    <img src={item.image} alt="" className="product-img d-block w-50" />
-                    <div className="card-body">
-                      <p className="product-brand">{ item.brand }</p>
-                      <p className="product-name">{index + 1}. { item.name }</p>
-                      <p className="product-price">{ item.price }</p>
-                      <a href={item.link} className="btn btn-success">Ver más</a>
+      <h2 className="carrousel-title">{ props.title }</h2>
+      <div className="carrousel-rearranged">
+        <h3 className="carrousel-subtitle">{ props.subtitle }</h3>
+        { carouselItems && (
+          <div id={props.id} className="carousel slide" data-bs-ride="carousel">
+            <div className="carousel-inner">
+              {
+                carouselItems.map((item, index) => {
+                  return <div key={"carousel-item-" + (index+1)} className={index === 0 ? "carousel-item active" : "carousel-item"}>
+                    <div className="card">
+                      <img src={item.image} alt="" className="product-img d-block w-50" />
+                      <div className="card-body">
+                        <p className="product-brand">{ item.brand }</p>
+                        <p className="product-name">{index + 1}. { item.name }</p>
+                        <p className="product-price">{ item.price }</p>
+                        <a href={item.link} className="btn btn-success">Ver más</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              })
-            }
+                })
+              }
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target={"#" + props.id} data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target={"#" + props.id} data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
           </div>
-          <button className="carousel-control-prev" type="button" data-bs-target={"#" + props.id} data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target={"#" + props.id} data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

@@ -21,7 +21,7 @@
 .banner button {
     border: none;
     background-color: var(--brand-yellow);
-    border-radius: 20px;
+    border-radius: 2.5em;
     color: black;
     font-size: larger;
     font-weight: bold;
@@ -139,11 +139,8 @@
     background-size: cover;
 }
 
-.carrousel-banner {
+.carrousel-title, .carrousel-subtitle {
     color: white;
-}
-
-.carrousel-banner * {
     margin: 0;
 }
 
@@ -186,6 +183,7 @@
 
 .section-label {
     text-align: center;
+    margin: 1em 0;
 }
 
 .section-items {
@@ -348,8 +346,31 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .carrousel {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carrousel-rearranged {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .carousel {
+        max-width: 80%;
+    }
+
     .carousel-inner {
         display: flex;
+    }
+
+    .carrousel-subtitle {
+        min-width: 20%;
+        max-width: 20%;
+        padding: .5em;
     }
 
     .carousel-item {
@@ -360,11 +381,11 @@
     }
     
     .carousel-control-prev {
-        transform: translate(-150%, -50%);
+        transform: translate(-13em, -50%);
     }
 
     .carousel-control-next{
-        transform: translate(150%, -50%);
+        transform: translate(5em, -50%);
     }
 }
 
@@ -385,6 +406,10 @@
 
     .banner-overlay p {
         font-size: x-large;
+    }
+
+    .carousel-control-prev {
+        transform: translate(-20em, -50%);
     }
 
     .department-list {
